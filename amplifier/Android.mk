@@ -32,7 +32,8 @@ LOCAL_C_INCLUDES += \
     $(AUDIO_DIR)/hal \
     $(AUDIO_DIR)/hal/msm8974 \
     $(AUDIO_DIR)/hal/audio_extn \
-    external/tinycompress/include 
+    external/tinycompress/include \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
 
 LOCAL_CFLAGS += -DTA_DEBUG -DDEBUG_SHOW_VALUES -DDEBUG_RUN_ONLY_READ_TA
 
