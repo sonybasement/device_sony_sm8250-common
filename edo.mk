@@ -209,7 +209,9 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    vendor.semc.hardware.charger@1.0.vendor
+    vendor.semc.hardware.charger@1.0.vendor \
+    vendor.sony.charger \
+    vendor.sony.charger-service
 
 # Common init scripts
 PRODUCT_PACKAGES += \
