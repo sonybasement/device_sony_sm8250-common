@@ -92,9 +92,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay \
     LLVM=1 LLVM_IAS=1
 
-# Platform
-TARGET_BOARD_PLATFORM := kona
-
 # Qcom
 BOARD_USES_QCOM_HARDWARE := true
 
