@@ -348,15 +348,6 @@
         <fqname>@1.0::IAudioHalExt/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.gatekeeper</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.miscta</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMisctaGlobal/default</fqname>

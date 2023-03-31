@@ -294,10 +294,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@2.1.vendor
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -316,10 +312,6 @@ PRODUCT_COPY_FILES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
-    
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -395,6 +387,7 @@ PRODUCT_PACKAGES += \
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
+    keymaster \
     telephony \
     wfd
 
