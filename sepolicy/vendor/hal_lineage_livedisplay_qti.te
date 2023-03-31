@@ -1,3 +1,8 @@
+type hal_lineage_livedisplay_qti, domain;
+
+type hal_lineage_livedisplay_qti_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_lineage_touch_default)
+
 # Allow hal_lineage_livedisplay_qti to write to write display panel drive files
 allow hal_lineage_livedisplay_qti sysfs_dp:dir search;
 allow hal_lineage_livedisplay_qti sysfs_dp:file { getattr open write };
