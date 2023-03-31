@@ -31,7 +31,8 @@ LOCAL_C_INCLUDES += \
     $(call include-path-for,audio-route) \
     $(AUDIO_DIR)/hal \
     $(AUDIO_DIR)/hal/msm8974 \
-    $(AUDIO_DIR)/hal/audio_extn
+    $(AUDIO_DIR)/hal/audio_extn \
+    external/tinycompress/include 
 
 LOCAL_CFLAGS += -DTA_DEBUG -DDEBUG_SHOW_VALUES -DDEBUG_RUN_ONLY_READ_TA
 
