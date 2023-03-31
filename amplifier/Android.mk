@@ -15,6 +15,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
+AUDIO_DIR := vendor/qcom/opensource/audio-hal/primary-hal
 
 include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := \
@@ -28,9 +29,9 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_C_INCLUDES += \
     $(call include-path-for,audio-route) \
-    $(call project-path-for,qcom-audio)/hal \
-    $(call project-path-for,qcom-audio)/hal/msm8974 \
-    $(call project-path-for,qcom-audio)/hal/audio_extn
+    $(AUDIO_DIR)/hal \
+    $(AUDIO_DIR)/hal/msm8974 \
+    $(AUDIO_DIR)/hal/audio_extn
 
 LOCAL_CFLAGS += -DTA_DEBUG -DDEBUG_SHOW_VALUES -DDEBUG_RUN_ONLY_READ_TA
 
