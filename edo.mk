@@ -329,6 +329,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     keymaster \
     qseecomd \
     telephony \
+    vibrator \
     wfd
 
 # Ramdisk
@@ -383,9 +384,6 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vibrator
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # WiFi
 PRODUCT_PACKAGES += \
