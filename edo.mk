@@ -327,6 +327,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     init \
     keymaster \
+    qseecomd \
     telephony \
     wfd
 
