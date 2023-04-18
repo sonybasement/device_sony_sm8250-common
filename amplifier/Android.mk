@@ -40,7 +40,7 @@ LOCAL_CFLAGS += -DTA_DEBUG -DDEBUG_SHOW_VALUES -DDEBUG_RUN_ONLY_READ_TA
 LOCAL_SRC_FILES := audio_amplifier.c
 LOCAL_MODULE := audio_amplifier.$(TARGET_BOARD_PLATFORM)
 LOCAL_HEADER_LIBRARIES := \
-    generated_kernel_headers \
+    qti_kernel_headers \
     libhardware_headers
 
 LOCAL_MODULE_RELATIVE_PATH := hw
