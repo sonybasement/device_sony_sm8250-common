@@ -96,8 +96,6 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
 # Audio FX Modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
