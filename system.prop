@@ -64,8 +64,5 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 # ro.semc.version.sw_type=user
 # ro.semc.version.sw_variant=GLOBAL4GB-C2
 
-# Vendor
-ro.vendor.qti.va_aosp.support=1
-
 # Zygote
 # persist.device_config.runtime_native.usap_pool_enabled=true
