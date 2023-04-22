@@ -225,9 +225,6 @@ ro.camera.notify_nfc=1
 vendor.power.pasr.enabled=true
 vendor.pasr.activemode.enabled=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Radio
 ro.telephony.default_network=33,33
 persist.rcs.supported=1

@@ -26,6 +26,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Board Platform
 TARGET_BOARD_PLATFORM := kona
 
+# Qti components
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
@@ -368,9 +372,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
     libmm-omxcore \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
@@ -426,8 +427,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power@1.2.vendor 
 
 # QMI
 PRODUCT_PACKAGES += \
