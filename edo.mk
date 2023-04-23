@@ -148,7 +148,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Charger
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     vendor.semc.hardware.charger@1.0.vendor \
     vendor.sony.charger \
     vendor.sony.charger-service
@@ -283,8 +283,8 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/sony
+    $(LOCAL_PATH) 
+    # hardware/sony
 
 # Set fdsan to the warn_once severity level
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -322,7 +322,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
 # XperiaParts
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     XperiaParts
 
 PRODUCT_BUILD_SUPER_PARTITION := false
